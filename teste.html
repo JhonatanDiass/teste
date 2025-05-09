@@ -29,12 +29,45 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
                 <button class="btn custom-btn">Login</button>
             </div>
         </div>
     </nav>
 
-    <!-- Add your content here -->
+    <!-- Tela inicial com carrossel de produtos -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Destaques</h2>
+        <div id="carouselProdutos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <img src="imagens/camisa1.png" class="d-block mx-2" alt="Camisa 1">
+                        <img src="imagens/camisa2.png" class="d-block mx-2" alt="Camisa 2">
+                        <img src="imagens/camisa3.png" class="d-block mx-2" alt="Camisa 3">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="camiseta_preta_malha_pv_manga_curta_gola_redonda_267_1_948ec668619667388dfc700bf588df6d.png" class="d-block mx-2" alt="Camisa 4">
+                        <img src="imagens/camisa5.png" class="d-block mx-2" alt="Camisa 5">
+                        <img src="imagens/camisa6.png" class="d-block mx-2" alt="Camisa 6">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
